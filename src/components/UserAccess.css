@@ -1,0 +1,127 @@
+/* ============================================================
+   User Access cards
+   ============================================================ */
+.access__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.access-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1.9rem 1.6rem 1.7rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform 0.35s var(--ease),
+    box-shadow 0.35s var(--ease),
+    border-color 0.35s var(--ease);
+}
+
+.access-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(16, 106, 46, 0.25);
+  box-shadow: var(--shadow);
+}
+
+.access-card__icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--green-600), var(--green-800));
+  color: var(--mint-300);
+}
+
+.access-card h3 {
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+
+.access-card p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+.access-card .btn {
+  margin-top: 0.5rem;
+}
+
+.access-card__desktop-note,
+.access-card__mobile-note {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.access-card__desktop-note {
+  color: #8a6d00;
+}
+
+/* Guidance Admin is desktop-only: hide its card on small screens */
+.access-card--desktop-only {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .access-card--desktop-only {
+    display: flex;
+  }
+}
+
+/* Desktop-only note under the grid is only needed on mobile */
+.access__admin-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  margin: 2rem auto 0;
+  max-width: 560px;
+  padding: 0.85rem 1.2rem;
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.access__admin-note svg {
+  color: #8a6d00;
+  flex-shrink: 0;
+}
+
+.access__admin-note strong {
+  color: var(--ink-soft);
+}
+
+@media (min-width: 768px) {
+  .access__admin-note {
+    display: none;
+  }
+}
+
+/* ---------- Responsive grid ---------- */
+@media (max-width: 1080px) {
+  .access__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .access__grid {
+    grid-template-columns: 1fr;
+  }
+}

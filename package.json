@@ -1,0 +1,25 @@
+{
+  "name": "gcas-promotional-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Promotional website for the Guidance Counseling and Appointment System (GCAS) of Colegio de Montalban.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "verify": "node scripts/verify-site.mjs",
+    "icons": "node scripts/generate-icons.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "playwright-core": "^1.64.0",
+    "sharp": "^0.33.5",
+    "vite": "^5.4.11",
+    "vite-plugin-pwa": "^0.21.1"
+  }
+}

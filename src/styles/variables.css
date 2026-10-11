@@ -1,0 +1,50 @@
+/* ============================================================
+   GCAS design tokens
+   Greens are matched to the official CDM OneServe portal palette.
+   ============================================================ */
+:root {
+  /* Greens */
+  --green-900: #062e19;
+  --green-800: #0b3d22;
+  --green-700: #0e3b22;
+  --green-600: #106a2e; /* primary brand green */
+  --green-500: #15803d;
+
+  /* Mints */
+  --mint-600: #059669;
+  --mint-500: #10b981;
+  --mint-400: #34d399;
+  --mint-300: #6ee7b7;
+  --mint-100: #d1fae5;
+  --mint-50: #ecfdf5;
+
+  /* Accents & neutrals */
+  --amber: #f4d35e;
+  --ink: #10231b;
+  --ink-soft: #33473c;
+  --muted: #5b6b62;
+  --line: #e2ebe5;
+  --surface: #f6faf7;
+  --surface-alt: #eef6f0;
+  --white: #ffffff;
+
+  /* Typography */
+  --font-display: 'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+  /* Shape & elevation */
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --shadow-sm: 0 1px 2px rgba(16, 35, 27, 0.06), 0 2px 6px rgba(16, 35, 27, 0.05);
+  --shadow: 0 14px 34px -16px rgba(11, 61, 34, 0.22);
+  --shadow-lg: 0 30px 70px -28px rgba(11, 61, 34, 0.4);
+
+  /* Layout */
+  --container: 1140px;
+  --nav-height: 76px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}

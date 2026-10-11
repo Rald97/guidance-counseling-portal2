@@ -1,0 +1,89 @@
+/* ============================================================
+   Features
+   ============================================================ */
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feature-card {
+  position: relative;
+  padding: 1.9rem 1.6rem 1.8rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition:
+    transform 0.35s var(--ease),
+    box-shadow 0.35s var(--ease),
+    border-color 0.35s var(--ease);
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(16, 106, 46, 0.22);
+  box-shadow: var(--shadow);
+}
+
+.feature-card__icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 1.2rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--mint-50), var(--mint-100));
+  color: var(--green-600);
+  transition: transform 0.35s var(--ease);
+}
+
+.feature-card:hover .feature-card__icon {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+.feature-card h3 {
+  font-size: 1.12rem;
+  font-weight: 700;
+  margin-bottom: 0.55rem;
+}
+
+.feature-card p {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+/* Soft gradient glow that appears on hover */
+.feature-card__shine {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.16), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s var(--ease);
+  pointer-events: none;
+}
+
+.feature-card:hover .feature-card__shine {
+  opacity: 1;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .features__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .features__grid {
+    grid-template-columns: 1fr;
+  }
+}
