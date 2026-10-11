@@ -186,8 +186,7 @@
 
 /* ---------- Responsive ---------- */
 @media (max-width: 980px) {
-  .navbar__links,
-  .navbar__install {
+  .navbar__links {
     display: none;
   }
 

@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react'
 import Logo from './Logo.jsx'
 import Icon from './Icon.jsx'
-import InstallAppButton from './InstallAppButton.jsx'
 import { navLinks, PORTAL_URL } from '../data/content.js'
 import './Navbar.css'
 
 /**
  * Sticky navigation bar with smooth-scroll links, a mobile menu,
- * the PWA install button, and a link to the official portal.
+ * and a link to the official portal.
  */
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -91,9 +90,6 @@ export default function Navbar() {
           </ul>
 
           <div className="navbar__actions">
-            <span className="navbar__install">
-              <InstallAppButton variant="nav" />
-            </span>
             <a className="btn btn--primary btn--sm navbar__portal" href={PORTAL_URL}>
               Open Portal
             </a>
@@ -130,7 +126,6 @@ export default function Navbar() {
           </ul>
 
           <div className="navbar__mobile-footer">
-            <InstallAppButton variant="inline" />
             <a className="btn btn--primary btn--wide" href={PORTAL_URL} onClick={closeMenu}>
               Open the Official Portal
             </a>
