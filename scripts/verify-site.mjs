@@ -72,7 +72,7 @@ async function main() {
       visible: el.offsetParent !== null,
     })),
   )
-  check('4 access cards rendered', cards.length === 4, cards.map((c) => c.name).join(', '))
+  check('3 access cards rendered', cards.length === 3, cards.map((c) => c.name).join(', '))
   check(
     'Guidance Admin visible on desktop',
     cards.some((c) => c.name === 'Guidance Admin' && c.visible),

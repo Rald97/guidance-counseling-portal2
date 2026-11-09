@@ -45,7 +45,7 @@ export const features = [
     icon: 'shield',
     title: 'Secure Role-Based Access',
     description:
-      'Students, faculty, counselors, and guidance admins each sign in to their own role, so people only see what concerns them.',
+      'Students, counselors, and guidance admins each sign in to their own role, so people only see what concerns them.',
   },
 ]
 
@@ -74,14 +74,6 @@ export const steps = [
 
 export const roles = [
   {
-    icon: 'chat',
-    name: 'Counselor',
-    description:
-      'Manage counseling schedules, review appointment requests, and keep track of your sessions.',
-    action: 'Open portal as Counselor',
-    desktopOnly: false,
-  },
-  {
     icon: 'student',
     name: 'Student',
     description:
@@ -90,11 +82,11 @@ export const roles = [
     desktopOnly: false,
   },
   {
-    icon: 'faculty',
-    name: 'Faculty Members',
+    icon: 'chat',
+    name: 'Counselor',
     description:
-      'Coordinate with the guidance office and support the students you advise through the portal.',
-    action: 'Open portal as Faculty',
+      'Manage counseling schedules, review appointment requests, and keep track of your sessions.',
+    action: 'Open portal as Counselor',
     desktopOnly: false,
   },
   {

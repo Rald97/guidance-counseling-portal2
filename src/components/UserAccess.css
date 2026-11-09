@@ -3,7 +3,7 @@
    ============================================================ */
 .access__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.4rem;
   margin: 0;
   padding: 0;
@@ -114,7 +114,9 @@
 }
 
 /* ---------- Responsive grid ---------- */
-@media (max-width: 1080px) {
+/* Below 768px the Guidance Admin card is hidden, leaving the two
+   mobile-friendly role cards side by side; they stack on phones. */
+@media (max-width: 767px) {
   .access__grid {
     grid-template-columns: repeat(2, 1fr);
   }

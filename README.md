@@ -15,8 +15,8 @@ Appointment System (GCAS)** of **Colegio de Montalban**, part of the official
 - **Green theme** matched to the official CDM OneServe palette (forest green `#106A2E`,
   deep green `#0B3D22`, mint `#10B981`, white).
 - **Fully responsive** — desktop, tablet, and mobile, with a slide-down mobile menu.
-- **Role-based access cards:** Counselor, Student, and Faculty Members (mobile-friendly) plus
-  Guidance Admin (desktop only — hidden below 768 px).
+- **Role-based access cards:** Student, Counselor, and Guidance Admin (desktop only — hidden
+  below 768 px).
 - **PWA:** web app manifest, generated icons, service worker with offline caching of the public
   site assets, and an **Install App** button with friendly fallback messages.
 - **Accessibility:** semantic HTML, skip link, keyboard focus styles, `aria-*` attributes, and

@@ -22,7 +22,7 @@ export default function About() {
             <p>
               The Guidance Counseling and Appointment System (GCAS) is the guidance office module
               of <strong>{school.portalName}</strong>, the integrated campus service platform of{' '}
-              <strong>{school.name}</strong>. It gives students and faculty a simple, organized way
+              <strong>{school.name}</strong>. It gives students a simple, organized way
               to connect with guidance counselors — without walking to the office just to book a
               schedule.
             </p>
